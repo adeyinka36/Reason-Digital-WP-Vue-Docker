@@ -1,0 +1,170 @@
+/* css reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Roboto";
+}
+
+body{
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 2rem;
+    max-width: 1750px;
+}
+
+/* header styles */
+header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+header .icon-con{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    z-index: 200;
+}
+
+header .menu, header .logo{
+    font-size: 4rem;
+}
+
+header ul{
+    position: absolute;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    transition: opacity .25s ease-out, top 1s ease-out;
+    width: 100%;
+    top: -250%;
+    z-index: 1;
+}
+header ul li{
+    height: 3vh;
+    text-align: center;
+    font-size:.85rem;
+    margin-bottom: 1rem;
+}
+header ul a{
+    font-size: 1.7rem;
+    letter-spacing: .4rem;
+    font-weight: bold;
+    color: black;
+    width: auto;
+    margin-bottom: .2rem;
+}
+
+header .menu:hover{
+    cursor: pointer;
+    color: lightblue;
+
+}
+
+/* main-section styles */
+
+.description-search{
+    display: flex;
+    justify-content: space-between;
+}
+
+.description{
+    width: 50%;
+}
+.search{
+    margin-top: auto;
+    width: 40%;
+}
+.search ul{
+    display:  flex;
+    min-width: 50%;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+main{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ main .post-con {
+    max-width: 31%;  
+    margin: .5rem 0;
+    margin-bottom: 1.5rem;
+}
+main .post-con img{
+    width: 100%;
+}
+
+.post-con .title{
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+/* single page style */
+
+.main-single{
+    display: flex;
+    height: 90vh;
+    
+}
+.main-single div{
+    width: 50%;
+    height: 90%;
+    margin-top: 6rem;
+}
+
+.main-single img{
+    max-width: 100%;
+}
+
+.main-single .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 2rem;
+}
+
+.main-single .right *{
+    width: 100%;
+    text-align: left;
+}
+
+.main-single .left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search li{
+    transition: opacity .75s ease-out;
+    border-bottom: 2px solid rgba(0,0,0,0);
+    
+}
+.search li:hover{
+    border-bottom: 2px solid rgba(0,0,0,1);
+    cursor: pointer;
+}
+
+/* a bit of media queries for single post page */
+@media (max-width: 1150px){
+   .main-single{
+       flex-direction: column;
+   }
+   .main-single div{
+       width: 100%;
+   }
+   .main-single .right p{
+    padding-top: 1rem;
+   }
+}

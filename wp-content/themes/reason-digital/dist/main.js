@@ -1,0 +1,1 @@
+(()=>{const e=document.getElementsByClassName("header")[0],t=document.getElementsByClassName("drop-down")[0];let s=!1;e.addEventListener("click",(e=>{Array.from(e.target.classList).includes("menu")&&!s?(t.style.top="100%",t.style.opacity="1",s=!0):Array.from(e.target.classList).includes("menu")&&s&&(t.style.top="-200%",t.style.opacity="0",s=!1)}))})();

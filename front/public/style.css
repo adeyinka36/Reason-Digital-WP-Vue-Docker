@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Roboto";
+}
+
+body{
+    width: 90vw;
+    margin: 2rem auto 0;
+    max-width: 1750px;
+}
